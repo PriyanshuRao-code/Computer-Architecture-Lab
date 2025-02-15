@@ -21,3 +21,7 @@ Run the script: `python test zip.py <path-to-zip-file>` in the same folder that 
 `ant make-jar` (For making jar file) <br>
 For printing the statistics: `java -jar <path-to-jar-file> <path-to-config-file> <path-to-stat-file> <path-to-object-file>` <br>
 Run the script: `python test zip.py <path-to-zip-file>` to check your submission. <br><br>
+
+## 📂 Project Structure
+
+👉 View the full directory structure here: [directory_tree.md](directory_tree.md)
