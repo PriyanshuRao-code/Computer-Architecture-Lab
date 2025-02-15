@@ -32,28 +32,27 @@ Computer-Architecture-Lab
 │   │   │   └── prime_1.input
 │   │   ├── test_each.py
 │   │   └── test_zip.py
-│   ├── test_cases_for_evaluation
-│   │   ├── descending_1.expected
-│   │   ├── descending_1.input
-│   │   ├── descending_2.expected
-│   │   ├── descending_2.input
-│   │   ├── even-odd_1.expected
-│   │   ├── even-odd_1.input
-│   │   ├── even-odd_2.expected
-│   │   ├── even-odd_2.input
-│   │   ├── fibonacci_1.expected
-│   │   ├── fibonacci_1.input
-│   │   ├── fibonacci_2.expected
-│   │   ├── fibonacci_2.input
-│   │   ├── palindrome_1.expected
-│   │   ├── palindrome_1.input
-│   │   ├── palindrome_2.expected
-│   │   ├── palindrome_2.input
-│   │   ├── prime_1.expected
-│   │   ├── prime_1.input
-│   │   ├── prime_2.expected
-│   │   └── prime_2.input
-│   └── toyrisc_isa_specification.pdf
+│   └── test_cases_for_evaluation
+│       ├── descending_1.expected
+│       ├── descending_1.input
+│       ├── descending_2.expected
+│       ├── descending_2.input
+│       ├── even-odd_1.expected
+│       ├── even-odd_1.input
+│       ├── even-odd_2.expected
+│       ├── even-odd_2.input
+│       ├── fibonacci_1.expected
+│       ├── fibonacci_1.input
+│       ├── fibonacci_2.expected
+│       ├── fibonacci_2.input
+│       ├── palindrome_1.expected
+│       ├── palindrome_1.input
+│       ├── palindrome_2.expected
+│       ├── palindrome_2.input
+│       ├── prime_1.expected
+│       ├── prime_1.input
+│       ├── prime_2.expected
+│       └── prime_2.input
 ├── Lab 2
 │   ├── CS311_Lab2.pdf
 │   └── supporting_files
@@ -147,5 +146,7 @@ Computer-Architecture-Lab
 │       │   ├── prime.expected
 │       │   └── prime.out
 │       └── test_zip.py
-└── README.md
+├── README.md
+├── directory_tree.md
+└── toyrisc_isa_specification.pdf
 ```

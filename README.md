@@ -1,7 +1,6 @@
 # Computer-Architecture-Lab
 
 The given below are some commands used. But to be sure about the format and extensive detailing read the Lab handouts present in every lab. <br>
-ToyRISC specifications are available in Lab 1. <br>
 (Tip: If you are creating jar file and not running as expected i.e. eg in Lab 3, use `ant clean` (May help as it helped me in the lab) and then create again.) <br><br>
 
 ## Lab 1 - All the asm files and analysis of compilers and ISA <br>
