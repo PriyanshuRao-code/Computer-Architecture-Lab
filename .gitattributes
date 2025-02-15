@@ -1,0 +1,13 @@
+# Normalize all text files to LF (Unix-style) in the repo, but allow Windows users to use CRLF locally
+* text=auto
+
+# Force specific files to always have LF in the repo (useful for scripts, configs)
+*.sh text eol=lf
+*.py text eol=lf
+*.js text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+
+# Windows-specific files (like batch scripts) should always use CRLF
+*.bat text eol=crlf
+*.cmd text eol=crlf
