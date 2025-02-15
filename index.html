@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <script src="https://d3js.org/d3.v6.min.js"></script>
+</head>
+<body>
+    <svg width="800" height="600"></svg>
+
+    <script>
+        const data = {
+            "name": "Project",
+            "children": [
+                { "name": "src", "children": [{ "name": "main.py" }, { "name": "utils.py" }] },
+                { "name": "docs", "children": [{ "name": "README.md" }] },
+                { "name": "assets", "children": [{ "name": "logo.png" }] }
+            ]
+        };
+
+        const width = 800, height = 600;
+        const treeLayout = d3.tree().size([width - 100, height - 100]);
+        const root = d3.hierarchy(data);
+        treeLayout(root);
+
+        const svg = d3.select("svg");
+        svg.selectAll("line")
+            .data(root.links())
+            .enter().append("line")
+            .attr("x1", d => d.source.x + 50)
+            .attr("y1", d => d.source.y + 50)
+            .attr("x2", d => d.target.x + 50)
+            .attr("y2", d => d.target.y + 50)
+            .style("stroke", "#555");
+
+        svg.selectAll("circle")
+            .data(root.descendants())
+            .enter().append("circle")
+            .attr("cx", d => d.x + 50)
+            .attr("cy", d => d.y + 50)
+            .attr("r", 5)
+            .style("fill", "steelblue");
+
+        svg.selectAll("text")
+            .data(root.descendants())
+            .enter().append("text")
+            .attr("x", d => d.x + 60)
+            .attr("y", d => d.y + 55)
+            .text(d => d.data.name);
+    </script>
+</body>
+</html>
