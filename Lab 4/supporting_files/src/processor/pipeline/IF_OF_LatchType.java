@@ -1,12 +1,15 @@
 package processor.pipeline;
 
+import generic.*;
+
 public class IF_OF_LatchType {
-	
+
 	boolean OF_enable;
 	int instruction;
-	
-	public IF_OF_LatchType()
-	{
+	boolean branchhazard;
+	Instruction instr;
+
+	public IF_OF_LatchType() {
 		OF_enable = false;
 	}
 
@@ -24,6 +27,22 @@ public class IF_OF_LatchType {
 
 	public void setInstruction(int instruction) {
 		this.instruction = instruction;
+	}
+
+	public boolean getBranchHazard() {
+		return branchhazard;
+	}
+
+	public void setBranchHazard(boolean branchhazard) {
+		this.branchhazard = branchhazard;
+	}
+
+	public void setIF_OFinstructionRW(Instruction inst) {
+		instr = inst;
+	}
+
+	public Instruction getIF_OFinstructionRW() {
+		return instr;
 	}
 
 }
