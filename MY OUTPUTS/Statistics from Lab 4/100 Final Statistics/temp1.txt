@@ -1,0 +1,7313 @@
+PC now: 9
+
+
+-----------One cycle completed------------
+
+
+MA instruction: null
+OF: instruction code: 10000
+OF: instruction code: (non - null)00010
+PC now: 10
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	sub	[Register:3]	[Register:3]	[Register:3]
+
+OF: instruction code: 10001
+OF: instruction code: (non - null)00010
+PC now: 11
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	sub	[Register:3]	[Register:3]	[Register:3]
+
+EX instruction: PC=0	sub	[Register:4]	[Register:4]	[Register:4]
+
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 12
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	sub	[Register:3]	[Register:3]	[Register:3]
+
+MA instruction: PC=0	sub	[Register:4]	[Register:4]	[Register:4]
+
+EX instruction: PC=0	load	[Register:0]	[Immediate:8]	[Register:8]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	sub	[Register:4]	[Register:4]	[Register:4]
+
+MA instruction: PC=0	load	[Register:0]	[Immediate:8]	[Register:8]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:0]	[Immediate:8]	[Register:8]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 13
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:3]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:3]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 15
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:3]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10001
+OF: instruction code: (non - null)00001
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:4]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:4]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 20
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 21
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+EX instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+MA instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 22
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+OF: instruction code: 10010
+OF: instruction code: (non - null)00001
+PC now: 23
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+EX instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 24
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+MA instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 20
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 21
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+EX instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+MA instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 22
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 24
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10001
+OF: instruction code: (non - null)00010
+PC now: 25
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+OF: instruction code: 10100
+OF: instruction code: (non - null)00000
+PC now: 26
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+EX instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+PC now: 27
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+MA instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+EX instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+MA instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+EX instruction: null
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+PC now: 28
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+OF: instruction code: 10010
+OF: instruction code: (non - null)00001
+PC now: 29
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+EX instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 30
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+MA instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 20
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 21
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+EX instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+MA instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 22
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 24
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10001
+OF: instruction code: (non - null)00010
+PC now: 25
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+OF: instruction code: 10100
+OF: instruction code: (non - null)00000
+PC now: 26
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+EX instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+PC now: 27
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+MA instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+EX instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+MA instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+EX instruction: null
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+PC now: 28
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+OF: instruction code: 10010
+OF: instruction code: (non - null)00001
+PC now: 29
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+EX instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 30
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+MA instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 20
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 21
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+EX instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+MA instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 22
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 24
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10001
+OF: instruction code: (non - null)00010
+PC now: 25
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+OF: instruction code: 10100
+OF: instruction code: (non - null)00000
+PC now: 26
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+EX instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+PC now: 27
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+MA instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+EX instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+MA instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+EX instruction: null
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+PC now: 28
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+OF: instruction code: 10010
+OF: instruction code: (non - null)00001
+PC now: 29
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+EX instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 30
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+MA instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 20
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 21
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+EX instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+MA instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 22
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+OF: instruction code: 10010
+OF: instruction code: (non - null)00001
+PC now: 23
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+EX instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 24
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+MA instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 20
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 21
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+EX instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+MA instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 22
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+OF: instruction code: 10010
+OF: instruction code: (non - null)00001
+PC now: 23
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+EX instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 24
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+MA instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 20
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 21
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+EX instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+MA instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 22
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+OF: instruction code: 10010
+OF: instruction code: (non - null)00001
+PC now: 23
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+EX instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 24
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+MA instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+OF: instruction code: 10001
+OF: instruction code: (non - null)00001
+PC now: 18
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:3]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:3]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-6]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:3]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-6]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 12
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 13
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:3]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:3]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 15
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:3]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10001
+OF: instruction code: (non - null)00001
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:4]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:4]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 20
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 21
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+EX instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+MA instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 22
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 24
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10001
+OF: instruction code: (non - null)00010
+PC now: 25
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+OF: instruction code: 10100
+OF: instruction code: (non - null)00000
+PC now: 26
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+EX instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+PC now: 27
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+MA instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+EX instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+MA instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+EX instruction: null
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+PC now: 28
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+OF: instruction code: 10010
+OF: instruction code: (non - null)00001
+PC now: 29
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+EX instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 30
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+MA instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 20
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 21
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+EX instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+MA instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 22
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 24
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10001
+OF: instruction code: (non - null)00010
+PC now: 25
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+OF: instruction code: 10100
+OF: instruction code: (non - null)00000
+PC now: 26
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+EX instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+PC now: 27
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+MA instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+EX instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+MA instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+EX instruction: null
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+PC now: 28
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+OF: instruction code: 10010
+OF: instruction code: (non - null)00001
+PC now: 29
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+EX instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 30
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+MA instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 20
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 21
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+EX instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+MA instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 22
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 24
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10001
+OF: instruction code: (non - null)00010
+PC now: 25
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+OF: instruction code: 10100
+OF: instruction code: (non - null)00000
+PC now: 26
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+EX instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+PC now: 27
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+MA instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+EX instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+MA instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+EX instruction: null
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+PC now: 28
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+OF: instruction code: 10010
+OF: instruction code: (non - null)00001
+PC now: 29
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+EX instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 30
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+MA instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 20
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 21
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+EX instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+MA instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 22
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+OF: instruction code: 10010
+OF: instruction code: (non - null)00001
+PC now: 23
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+EX instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 24
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+MA instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 20
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 21
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+EX instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+MA instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 22
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+OF: instruction code: 10010
+OF: instruction code: (non - null)00001
+PC now: 23
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+EX instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 24
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+MA instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 20
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 21
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+EX instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+MA instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 22
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 24
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10001
+OF: instruction code: (non - null)00010
+PC now: 25
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+OF: instruction code: 10100
+OF: instruction code: (non - null)00000
+PC now: 26
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+EX instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+PC now: 27
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+MA instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+EX instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+MA instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+EX instruction: null
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+PC now: 28
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+OF: instruction code: 10010
+OF: instruction code: (non - null)00001
+PC now: 29
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+EX instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 30
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+MA instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+OF: instruction code: 10001
+OF: instruction code: (non - null)00001
+PC now: 18
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:3]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:3]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-6]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:3]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-6]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 12
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 13
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:3]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:3]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 15
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:3]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10001
+OF: instruction code: (non - null)00001
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:4]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:4]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 20
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 21
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+EX instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+MA instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 22
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 24
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10001
+OF: instruction code: (non - null)00010
+PC now: 25
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+OF: instruction code: 10100
+OF: instruction code: (non - null)00000
+PC now: 26
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+EX instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+PC now: 27
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+MA instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+EX instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+MA instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+EX instruction: null
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+PC now: 28
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+OF: instruction code: 10010
+OF: instruction code: (non - null)00001
+PC now: 29
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+EX instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 30
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+MA instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 20
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 21
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+EX instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+MA instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 22
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 24
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10001
+OF: instruction code: (non - null)00010
+PC now: 25
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+OF: instruction code: 10100
+OF: instruction code: (non - null)00000
+PC now: 26
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+EX instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+PC now: 27
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+MA instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+EX instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+MA instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+EX instruction: null
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+PC now: 28
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+OF: instruction code: 10010
+OF: instruction code: (non - null)00001
+PC now: 29
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+EX instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 30
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+MA instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 20
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 21
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+EX instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+MA instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 22
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+OF: instruction code: 10010
+OF: instruction code: (non - null)00001
+PC now: 23
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+EX instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 24
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+MA instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 20
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 21
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+EX instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+MA instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 22
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+OF: instruction code: 10010
+OF: instruction code: (non - null)00001
+PC now: 23
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+EX instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 24
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+MA instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 20
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 21
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+EX instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+MA instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 22
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 24
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10001
+OF: instruction code: (non - null)00010
+PC now: 25
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+OF: instruction code: 10100
+OF: instruction code: (non - null)00000
+PC now: 26
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+EX instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+PC now: 27
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+MA instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+EX instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+MA instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+EX instruction: null
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+PC now: 28
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+OF: instruction code: 10010
+OF: instruction code: (non - null)00001
+PC now: 29
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+EX instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 30
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+MA instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+OF: instruction code: 10001
+OF: instruction code: (non - null)00001
+PC now: 18
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:3]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:3]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-6]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:3]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-6]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 12
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 13
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:3]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:3]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 15
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:3]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10001
+OF: instruction code: (non - null)00001
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:4]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:4]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 20
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 21
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+EX instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+MA instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 22
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 24
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10001
+OF: instruction code: (non - null)00010
+PC now: 25
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+OF: instruction code: 10100
+OF: instruction code: (non - null)00000
+PC now: 26
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+EX instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+PC now: 27
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+MA instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+EX instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+MA instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+EX instruction: null
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+PC now: 28
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+OF: instruction code: 10010
+OF: instruction code: (non - null)00001
+PC now: 29
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+EX instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 30
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+MA instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 20
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 21
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+EX instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+MA instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 22
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+OF: instruction code: 10010
+OF: instruction code: (non - null)00001
+PC now: 23
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+EX instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 24
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+MA instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 20
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 21
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+EX instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+MA instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 22
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+OF: instruction code: 10010
+OF: instruction code: (non - null)00001
+PC now: 23
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+EX instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 24
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+MA instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 20
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 21
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+EX instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+MA instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 22
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 24
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10001
+OF: instruction code: (non - null)00010
+PC now: 25
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+OF: instruction code: 10100
+OF: instruction code: (non - null)00000
+PC now: 26
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+EX instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+PC now: 27
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+MA instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+EX instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+MA instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+EX instruction: null
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+PC now: 28
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+OF: instruction code: 10010
+OF: instruction code: (non - null)00001
+PC now: 29
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+EX instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 30
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+MA instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+OF: instruction code: 10001
+OF: instruction code: (non - null)00001
+PC now: 18
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:3]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:3]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-6]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:3]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-6]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 12
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 13
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:3]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:3]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 15
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:3]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10001
+OF: instruction code: (non - null)00001
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:4]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:4]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 20
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 21
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+EX instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+MA instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 22
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 24
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10001
+OF: instruction code: (non - null)00010
+PC now: 25
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+OF: instruction code: 10100
+OF: instruction code: (non - null)00000
+PC now: 26
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+EX instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+PC now: 27
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+MA instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+EX instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+MA instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+EX instruction: null
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+PC now: 28
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+OF: instruction code: 10010
+OF: instruction code: (non - null)00001
+PC now: 29
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+EX instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 30
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+MA instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 20
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 21
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+EX instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+MA instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 22
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+OF: instruction code: 10010
+OF: instruction code: (non - null)00001
+PC now: 23
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+EX instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 24
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+MA instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 20
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 21
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+EX instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+MA instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 22
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 24
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10001
+OF: instruction code: (non - null)00010
+PC now: 25
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+OF: instruction code: 10100
+OF: instruction code: (non - null)00000
+PC now: 26
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+EX instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+PC now: 27
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+MA instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+EX instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+MA instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+EX instruction: null
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+PC now: 28
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+OF: instruction code: 10010
+OF: instruction code: (non - null)00001
+PC now: 29
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+EX instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 30
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+MA instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+OF: instruction code: 10001
+OF: instruction code: (non - null)00001
+PC now: 18
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:3]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:3]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-6]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:3]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-6]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 12
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 13
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:3]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:3]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 15
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:3]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10001
+OF: instruction code: (non - null)00001
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:4]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:4]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 20
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 21
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+EX instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+MA instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 22
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+OF: instruction code: 10010
+OF: instruction code: (non - null)00001
+PC now: 23
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+EX instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 24
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+MA instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-7]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 20
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 21
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+EX instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+MA instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 22
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 24
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10001
+OF: instruction code: (non - null)00010
+PC now: 25
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+OF: instruction code: 10100
+OF: instruction code: (non - null)00000
+PC now: 26
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+EX instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+PC now: 27
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+MA instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+EX instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+MA instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+EX instruction: null
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+PC now: 28
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+OF: instruction code: 10010
+OF: instruction code: (non - null)00001
+PC now: 29
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+EX instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 30
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+MA instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+OF: instruction code: 10001
+OF: instruction code: (non - null)00001
+PC now: 18
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:3]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:3]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-6]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:3]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-6]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 12
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 13
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:3]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:3]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 15
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:3]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10001
+OF: instruction code: (non - null)00001
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:4]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:4]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 20
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+OF: instruction code: 10110
+OF: instruction code: (non - null)10110
+PC now: 21
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+EX instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:3]	[Immediate:0]	[Register:5]
+
+MA instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	load	[Register:4]	[Immediate:0]	[Register:6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 22
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 24
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:5]	[Register:6]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10001
+OF: instruction code: (non - null)00010
+PC now: 25
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+OF: instruction code: 10100
+OF: instruction code: (non - null)00000
+PC now: 26
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+EX instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+PC now: 27
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	sub	[Register:7]	[Register:7]	[Register:7]
+
+MA instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+EX instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	add	[Register:0]	[Register:5]	[Register:7]
+
+MA instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+EX instruction: null
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	store	[Register:6]	[Immediate:0]	[Register:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10111
+OF: instruction code: (non - null)10111
+PC now: 28
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+OF: instruction code: 10010
+OF: instruction code: (non - null)00001
+PC now: 29
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+EX instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 30
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	store	[Register:7]	[Immediate:0]	[Register:4]
+
+MA instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:4]	[Immediate:1]	[Register:4]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-13]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+OF: instruction code: 10001
+OF: instruction code: (non - null)00001
+PC now: 18
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:3]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:3]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-6]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:3]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-6]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 12
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 13
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:3]	[Register:8]	[Immediate:3]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:3]	[Register:8]	[Immediate:3]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 15
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:3]	[Register:8]	[Immediate:3]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 10001
+OF: instruction code: (non - null)00001
+PC now: 16
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:4]
+
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:4]
+
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:4]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+Data Hazard Found
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 17
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+OF: instruction code: 10001
+OF: instruction code: (non - null)00001
+PC now: 18
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+EX instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:3]
+
+OF: instruction code: 11000
+OF: instruction code: (non - null)11000
+PC now: 19
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:4]	[Register:8]	[Immediate:3]
+
+MA instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:3]
+
+EX instruction: PC=0	jmp	[Register:0]	null	[Immediate:-6]
+
+Branch hazard found
+OF: instruction code: 11111
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	addi	[Register:3]	[Immediate:1]	[Register:3]
+
+MA instruction: PC=0	jmp	[Register:0]	null	[Immediate:-6]
+
+EX instruction: null
+OF: instruction code: 11111
+PC now: 12
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	jmp	[Register:0]	null	[Immediate:-6]
+
+MA instruction: null
+EX instruction: null
+OF: instruction code: 11011
+OF: instruction code: (non - null)11011
+PC now: 13
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: null
+EX instruction: PC=0	blt	[Register:3]	[Register:8]	[Immediate:3]
+
+OF: instruction code: 11101
+OF: instruction code: (non - null)11101
+
+
+-----------One cycle completed------------
+
+
+RW instruction: null
+MA instruction: PC=0	blt	[Register:3]	[Register:8]	[Immediate:3]
+
+EX instruction: PC=0	end	[Register:0]	[Register:0]	[Register:0]
+
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	blt	[Register:3]	[Register:8]	[Immediate:3]
+
+MA instruction: PC=0	end	[Register:0]	[Register:0]	[Register:0]
+
+
+
+-----------One cycle completed------------
+
+
+RW instruction: PC=0	end	[Register:0]	[Register:0]	[Register:0]
+
+MA instruction: PC=0	end	[Register:0]	[Register:0]	[Register:0]
+
+
+
+-----------One cycle completed------------
+
+
+
+Register File Contents:
+
+PC	: 14
+
+x0	: 0
+x1	: 65535
+x2	: 65535
+x3	: 8
+x4	: 8
+x5	: 10
+x6	: 20
+x7	: 10
+x8	: 8
+x9	: 0
+x10	: 0
+x11	: 0
+x12	: 0
+x13	: 0
+x14	: 0
+x15	: 0
+x16	: 0
+x17	: 0
+x18	: 0
+x19	: 0
+x20	: 0
+x21	: 0
+x22	: 0
+x23	: 0
+x24	: 0
+x25	: 0
+x26	: 0
+x27	: 0
+x28	: 0
+x29	: 0
+x30	: 0
+x31	: 0
+
+
+
+Main Memory Contents:
+
+0		: 80
+1		: 70
+2		: 60
+3		: 50
+4		: 40
+5		: 30
+6		: 20
+7		: 10
+8		: 8
+9		: 281423872
+10		: 285753344
+11		: -1341128696
+12		: -657457149
+13		: -402653184
+14		: 147324929
+15		: 147324929
+16		: -653262845
+17		: 147193857
+18		: -1069547526
+19		: -1328939008
+20		: -1324613632
+21		: -649330685
+22		: 151519233
+23		: -1069547527
+24		: 298741760
+25		: 684032
+26		: -1182400512
+27		: -1178075136
+28		: 151519233
+29		: -1069547533
+30		: 0
+
+
+Hash of the Processor State = 255541867

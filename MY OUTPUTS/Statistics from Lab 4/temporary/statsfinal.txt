@@ -1,0 +1,15 @@
+Number of cycles taken = 548
+	Number of cycles taken = 19
+	Number of cycles taken = 132
+	Number of cycles taken = 131
+	Number of cycles taken = 65
+Number of OFstall = 179
+	Number of OFstall = 9
+	Number of OFstall = 34
+	Number of OFstall = 71
+	Number of OFstall = 27
+Number of branch taken = 176
+	Number of branch taken = 0
+	Number of branch taken = 32
+	Number of branch taken = 14
+	Number of branch taken = 10

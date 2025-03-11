@@ -1,0 +1,3 @@
+Number of cycles taken = 146
+Number of OFstall = 37
+Number of branch taken (instructions i.e. 2 per branch) = 20

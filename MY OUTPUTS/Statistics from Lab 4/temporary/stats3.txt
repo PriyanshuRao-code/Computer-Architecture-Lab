@@ -1,0 +1,6 @@
+Number of instructions executed = 132
+Number of cycles taken = 132
+Number of OFstall = 34
+Number of branch taken = 32
+IPC = 1.0
+CPI = 1.0
