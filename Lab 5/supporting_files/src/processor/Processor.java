@@ -51,10 +51,10 @@ public class Processor {
 		Da = new Data_Hazard(this, OF_EX_Latch, EX_MA_Latch, MA_RW_Latch, IF_EnableLatch, IF_OF_Latch);
 		Br = new Branch_Hazard(this, OF_EX_Latch, EX_MA_Latch, MA_RW_Latch, IF_EnableLatch, IF_OF_Latch);
 
-		IFUnit = new InstructionFetch(this, IF_EnableLatch, IF_OF_Latch, EX_IF_Latch);
+		IFUnit = new InstructionFetch(this, IF_EnableLatch, IF_OF_Latch, EX_IF_Latch, Br);
 		OFUnit = new OperandFetch(this, IF_OF_Latch, OF_EX_Latch, Da);
 		EXUnit = new Execute(this, OF_EX_Latch, EX_MA_Latch, EX_IF_Latch, Br);
-		MAUnit = new MemoryAccess(this, EX_MA_Latch, MA_RW_Latch);
+		MAUnit = new MemoryAccess(this, EX_MA_Latch, MA_RW_Latch, Br);
 		RWUnit = new RegisterWrite(this, MA_RW_Latch, IF_EnableLatch, IF_OF_Latch);
 	}
 

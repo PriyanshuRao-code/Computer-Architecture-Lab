@@ -30,6 +30,12 @@ public class Branch_Hazard {
             IF_OF_Latch.setInstruction(-1);
             IF_OF_Latch.setBranchHazard(true);
             Statistics.setwrongBranch(Statistics.getwrongBranch() + 1);
+
+            IF_OF_Latch.set_branch(true);
+            OF_EX_Latch.set_branch(true);
+            EX_MA_Latch.set_branch(true);
+            MA_RW_Latch.set_branch(true);
+            OF_EX_Latch.set_branch_problem(true);
         }
     }
 

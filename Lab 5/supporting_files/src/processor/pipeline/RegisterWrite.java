@@ -18,6 +18,12 @@ public class RegisterWrite {
 	}
 
 	public void performRW() {
+		if (MA_RW_Latch.is_branch()) {
+			return;
+		}
+		if (MA_RW_Latch.is_RW_busy()) {
+			return;
+		}
 		if (MA_RW_Latch.isRW_enable()) {
 
 			// if instruction being processed is an end instruction, remember to call
@@ -51,10 +57,12 @@ public class RegisterWrite {
 					containingProcessor.getRegisterFile().setValue(instruction.getDestinationOperand().getValue(),
 							MA_RW_Latch.getALu());
 				}
+
 			}
 			// MA_RW_Latch.setRW_enable(false);
 			// IF_EnableLatch.setIF_enable(true);
 			IF_OF_Latch.setIF_OFinstructionRW(instruction);
+			MA_RW_Latch.setInstruction(null);
 		}
 	}
 

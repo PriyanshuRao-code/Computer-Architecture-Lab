@@ -1,0 +1,3 @@
+Number of cycles taken = 329
+Number of instructions = 6
+IPC = 0.018237082

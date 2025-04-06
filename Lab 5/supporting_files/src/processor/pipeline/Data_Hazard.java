@@ -105,8 +105,8 @@ public class Data_Hazard {
         Instruction inst_rw = IF_OF_Latch.getIF_OFinstructionRW();
 
         if (inst.getOperationType() == OperationType.end) {
-            IF_OF_Latch.setOF_enable(false);
-            IF_EnableLatch.setIF_enable(false);
+            // IF_OF_Latch.setOF_enable(false);
+            // IF_EnableLatch.setIF_enable(false);
             return true;
         }
 

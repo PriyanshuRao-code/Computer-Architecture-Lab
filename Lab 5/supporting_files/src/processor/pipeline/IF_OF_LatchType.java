@@ -8,6 +8,10 @@ public class IF_OF_LatchType {
 	int instruction;
 	boolean branchhazard;
 	Instruction instr;
+	boolean OF_busy;
+	boolean OF_busy_MA;
+	boolean OF_busy_EX;
+	boolean branch;
 
 	public IF_OF_LatchType() {
 		OF_enable = false;
@@ -43,6 +47,38 @@ public class IF_OF_LatchType {
 
 	public Instruction getIF_OFinstructionRW() {
 		return instr;
+	}
+
+	public boolean isOF_busy() {
+		return OF_busy;
+	}
+
+	public void setOF_busy(boolean oF_busy) {
+		OF_busy = oF_busy;
+	}
+
+	public boolean isOF_busy_EX() {
+		return OF_busy_EX;
+	}
+
+	public void setOF_busy_EX(boolean oF_busy) {
+		OF_busy_EX = oF_busy;
+	}
+
+	public boolean isOF_busy_MA() {
+		return OF_busy_MA;
+	}
+
+	public void setOF_busy_MA(boolean oF_busy) {
+		OF_busy_MA = oF_busy;
+	}
+
+	public boolean is_branch() {
+		return branch;
+	}
+
+	public void set_branch(boolean b) {
+		branch = b;
 	}
 
 }

@@ -18,11 +18,16 @@ public class Statistics {
 
 			// writer.println("Number of instructions executed = " + numberOfInstructions);
 			writer.println("Number of cycles taken = " + numberOfCycles);
-			writer.println("Number of OFstall = " + ofStall);
-			writer.println("Number of branch taken (instructions i.e. 2 per branch) = " + wrongBranch);
-
+			// writer.println("Number of OFstall = " + ofStall);
+			// writer.println("Number of branch taken (instructions i.e. 2 per branch) = " +
+			// wrongBranch);
+			setNumberOfInstructions(getNumberofInstruction() - wrongBranch);
+			writer.println("Number of instructions = " + numberOfInstructions);
 			// TODO add code here to print statistics in the output file
-			// writer.println("IPC = " + cpi);
+
+			setIpc(numberOfInstructions, numberOfCycles);
+			setCpi(numberOfInstructions, numberOfCycles);
+			writer.println("IPC = " + ipc);
 			// writer.println("CPI = " + cpi);
 			writer.close();
 		} catch (Exception e) {

@@ -12,11 +12,12 @@ public class Simulator {
 
 	static Processor processor;
 	static boolean simulationComplete;
+	static EventQueue eventQueue;
 
 	public static void setupSimulation(String assemblyProgramFile, Processor p) {
 		Simulator.processor = p;
 		loadProgram(assemblyProgramFile);
-
+		eventQueue = new EventQueue();
 		simulationComplete = false;
 	}
 
@@ -68,10 +69,11 @@ public class Simulator {
 			processor.getRWUnit().performRW();
 			processor.getMAUnit().performMA();
 			processor.getEXUnit().performEX();
+			eventQueue.processEvents();
 			processor.getOFUnit().performOF();
 			processor.getIFUnit().performIF();
 			Clock.incrementClock();
-			System.out.println("\n\n-----------One cycle completed------------\n\n");
+			System.out.println("\n\n-----------One cycle completed------------" + cycles_num + "\n\n");
 			// ++instruction_num;
 			++cycles_num;
 		}
@@ -86,5 +88,9 @@ public class Simulator {
 
 	public static void setSimulationComplete(boolean value) {
 		simulationComplete = value;
+	}
+
+	public static EventQueue getEventQueue() {
+		return eventQueue;
 	}
 }

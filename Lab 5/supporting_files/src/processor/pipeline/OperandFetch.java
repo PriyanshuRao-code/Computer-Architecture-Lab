@@ -115,11 +115,23 @@ public class OperandFetch {
 	}
 
 	public void performOF() {
+		if (IF_OF_Latch.is_branch()) {
+			return;
+		}
+		// || IF_OF_Latch.isOF_busy_EX() || IF_OF_Latch.isOF_busy_MA()
+		if (IF_OF_Latch.isOF_busy() || IF_OF_Latch.isOF_busy_EX() || IF_OF_Latch.isOF_busy_MA()) {
+			System.out.println("OF busy");
+			return;
+		}
+		if (Da.IF_EnableLatch.isIF_busy()) {
+			OF_EX_Latch.setInstruction(null);
+			return;
+		}
 		if (IF_OF_Latch.isOF_enable()) {
 			Instruction inst = new Instruction();
 			// Converting instruction in int to binary
 			String binInst = Integer.toBinaryString(IF_OF_Latch.getInstruction());
-			System.out.println("OF: instruction code: " + binInst.substring(0, 5));
+			// System.out.println("OF: instruction code: " + binInst.substring(0, 5));
 
 			if (IF_OF_Latch.getInstruction() != -1) {
 				// Adjusting binary size to 32 bits
@@ -303,6 +315,7 @@ public class OperandFetch {
 			} else {
 				OF_EX_Latch.setEX_enable(true);
 				OF_EX_Latch.setInstruction(null);
+				System.out.println("OF sending null to EX");
 			}
 			// IF_EnableLatch.setIF_enable(true);
 			Da.getIF_EnableLatch().setIF_enable(true);

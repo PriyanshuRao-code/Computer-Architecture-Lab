@@ -25,6 +25,8 @@ public class EventQueue {
 		{
 			Event event = queue.poll();
 			event.getProcessingElement().handleEvent(event);
+			System.out.println("Event Detected");
+			System.out.println(event);
 		}
 	}
 }

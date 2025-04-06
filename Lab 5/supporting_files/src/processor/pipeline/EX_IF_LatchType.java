@@ -4,11 +4,10 @@ public class EX_IF_LatchType {
 	boolean isBranchEnabled;
 	int pc;
 
-	public EX_IF_LatchType()
-	{
+	public EX_IF_LatchType() {
 		isBranchEnabled = false;
 	}
-	
+
 	public boolean isBranchEnabled() {
 		return isBranchEnabled;
 	}
@@ -17,11 +16,11 @@ public class EX_IF_LatchType {
 		this.isBranchEnabled = isBranchEnabled;
 	}
 
-	public void setPC(int pc){
-		this.pc =pc;
+	public void setPC(int pc) {
+		this.pc = pc;
 	}
 
-	public int getPC(){
+	public int getPC() {
 		return pc;
 	}
 }
