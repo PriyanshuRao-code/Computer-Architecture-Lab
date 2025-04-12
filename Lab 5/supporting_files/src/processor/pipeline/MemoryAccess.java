@@ -70,7 +70,8 @@ public class MemoryAccess implements Element {
 					// registerfile
 					// containingProcessor.getMainMemory().setWord(alu,
 					// containingProcessor.getRegisterFile().getValue(inst.getSourceOperand1().getValue()));
-					Simulator.getEventQueue().addEvent(new MemoryWriteEvent(Clock.getCurrentTime(), this,
+					Simulator.getEventQueue().addEvent(new MemoryWriteEvent(Clock.getCurrentTime() 
+							+ Configuration.mainMemoryLatency, this,
 							containingProcessor.getMainMemory(), alu,
 							containingProcessor.getRegisterFile().getValue(inst.getSourceOperand1().getValue())));
 
