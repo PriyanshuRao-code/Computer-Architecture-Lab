@@ -98,9 +98,7 @@
 │   ├── 📝 stat5.txt
 │   └── 📂 supporting_files
 │       ├── 🗜️ CS23BT071_assignment3.zip
-│       ├── 📂 bin
 │       ├── 📜 build.xml
-│       ├── 📂 jars
 │       ├── 📂 src
 │       │   ├── 📂 configuration
 │       │   │   ├── ☕ Configuration.java
@@ -160,7 +158,6 @@
 │   └── 📂 supporting_files
 │       ├── 🗜️ CS23BT071_assignment4.zip
 │       ├── 📜 build.xml
-│       ├── 📝 even.txt
 │       ├── 📂 src
 │       │   ├── 📂 configuration
 │       │   │   ├── ☕ Configuration.java
@@ -193,7 +190,6 @@
 │       │           ├── ☕ OperandFetch.java
 │       │           ├── ☕ RegisterFile.java
 │       │           └── ☕ RegisterWrite.java
-│       ├── 📝 stat1.txt
 │       ├── 📂 test_cases
 │       │   ├── ⚙️ descending.asm
 │       │   ├── 🔒 descending.endsystemstate
@@ -221,7 +217,7 @@
 ├── 📂 Lab 5
 │   ├── 📑 Assignment 5.pdf
 │   └── 📂 supporting_files
-│       ├── 🗜️ CS23BT071_lab5.zip
+│       ├── 🗜️ CS23BT071_assignment5.zip
 │       ├── 📜 build.xml
 │       ├── 📂 src
 │       │   ├── 📂 configuration
@@ -250,6 +246,79 @@
 │       │       └── 📂 pipeline
 │       │           ├── ☕ Branch_Hazard.java
 │       │           ├── ☕ Data_Hazard.java
+│       │           ├── ☕ EX_IF_LatchType.java
+│       │           ├── ☕ EX_MA_LatchType.java
+│       │           ├── ☕ Execute.java
+│       │           ├── ☕ IF_EnableLatchType.java
+│       │           ├── ☕ IF_OF_LatchType.java
+│       │           ├── ☕ InstructionFetch.java
+│       │           ├── ☕ MA_RW_LatchType.java
+│       │           ├── ☕ MemoryAccess.java
+│       │           ├── ☕ OF_EX_LatchType.java
+│       │           ├── ☕ OperandFetch.java
+│       │           ├── ☕ RegisterFile.java
+│       │           └── ☕ RegisterWrite.java
+│       ├── 📂 test_cases
+│       │   ├── ⚙️ descending.asm
+│       │   ├── 🔒 descending.endsystemstate
+│       │   ├── 📌 descending.expected
+│       │   ├── 📤 descending.out
+│       │   ├── ⚙️ evenorodd.asm
+│       │   ├── 🔒 evenorodd.endsystemstate
+│       │   ├── 📌 evenorodd.expected
+│       │   ├── 📤 evenorodd.out
+│       │   ├── ⚙️ fibonacci.asm
+│       │   ├── 🔒 fibonacci.endsystemstate
+│       │   ├── 📌 fibonacci.expected
+│       │   ├── 📤 fibonacci.out
+│       │   ├── ⚙️ palindrome.asm
+│       │   ├── 🔒 palindrome.endsystemstate
+│       │   ├── 📌 palindrome.expected
+│       │   ├── 📤 palindrome.out
+│       │   ├── ⚙️ prime.asm
+│       │   ├── 🔒 prime.endsystemstate
+│       │   ├── 📌 prime.expected
+│       │   └── 📤 prime.out
+│       └── 🐍 test_zip.py
+│
+│
+├── 📂 Lab 6
+│   ├── 📑 CS23BT071_lab6_report.pdf
+│   ├── 📑 LabA6.pdf
+│   ├── ⚙️ ap.asm
+│   ├── 📤 ap.out
+│   ├── ⚙️ ascending.asm
+│   ├── 📤 ascending.out
+│   └── 📂 supporting_files
+│       ├── 🗜️ CS23BT071_assignment6.zip
+│       ├── 📜 build.xml
+│       ├── 📂 src
+│       │   ├── 📂 configuration
+│       │   │   ├── ☕ Configuration.java
+│       │   │   └── 📜 config.xml
+│       │   ├── 📂 generic
+│       │   │   ├── ☕ Element.java
+│       │   │   ├── ☕ Event.java
+│       │   │   ├── ☕ EventQueue.java
+│       │   │   ├── ☕ ExecutionCompleteEvent.java
+│       │   │   ├── ☕ Instruction.java
+│       │   │   ├── ☕ MemoryReadEvent.java
+│       │   │   ├── ☕ MemoryResponseEvent.java
+│       │   │   ├── ☕ MemoryWriteEvent.java
+│       │   │   ├── ☕ Misc.java
+│       │   │   ├── ☕ Operand.java
+│       │   │   ├── ☕ Simulator.java
+│       │   │   └── ☕ Statistics.java
+│       │   ├── 📂 main
+│       │   │   └── ☕ Main.java
+│       │   └── 📂 processor
+│       │       ├── ☕ Clock.java
+│       │       ├── ☕ Processor.java
+│       │       ├── 📂 memorysystem
+│       │       │   ├── ☕ Cache.java
+│       │       │   ├── ☕ CacheLine.java
+│       │       │   └── ☕ MainMemory.java
+│       │       └── 📂 pipeline
 │       │           ├── ☕ EX_IF_LatchType.java
 │       │           ├── ☕ EX_MA_LatchType.java
 │       │           ├── ☕ Execute.java
