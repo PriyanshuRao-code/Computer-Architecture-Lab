@@ -1,17 +1,22 @@
 package processor.pipeline;
 
-import generic.*;
-
 public class IF_OF_LatchType {
 
 	boolean OF_enable;
-	int instruction;
-	boolean branchhazard;
-	Instruction instr;
 	boolean OF_busy;
 	boolean OF_busy_MA;
 	boolean OF_busy_EX;
 	boolean branch;
+	String instruction;
+	boolean branch_hazard = false;
+	String rw_inst;
+	int ldResult = 0;
+	int aluResult;
+	int rs1;
+	int rs2;
+	int rd;
+	int immediate;
+	int remainder;
 
 	public IF_OF_LatchType() {
 		OF_enable = false;
@@ -25,28 +30,84 @@ public class IF_OF_LatchType {
 		OF_enable = oF_enable;
 	}
 
-	public int getInstruction() {
+	public String getInstruction() {
 		return instruction;
 	}
 
-	public void setInstruction(int instruction) {
+	public void setInstruction(String instruction) {
 		this.instruction = instruction;
 	}
 
-	public boolean getBranchHazard() {
-		return branchhazard;
+	public boolean isBranchHazard() {
+		return branch_hazard;
 	}
 
-	public void setBranchHazard(boolean branchhazard) {
-		this.branchhazard = branchhazard;
+	public void setBranchHazard(boolean isHazard) {
+		branch_hazard = isHazard;
 	}
 
-	public void setIF_OFinstructionRW(Instruction inst) {
-		instr = inst;
+	public String getRWInstruction() {
+		return rw_inst;
 	}
 
-	public Instruction getIF_OFinstructionRW() {
-		return instr;
+	public void setRWInstruction(String inst) {
+		rw_inst = inst;
+	}
+
+	public void set_ldresult(int Ldresult) {
+		ldResult = Ldresult;
+	}
+
+	public int get_ldresult() {
+		return ldResult;
+	}
+
+	public int getAluResult() {
+		return aluResult;
+	}
+
+	public void setAluResult(int alu) {
+		aluResult = alu;
+	}
+
+	public int getRs1() {
+		return rs1;
+	}
+
+	public void setRs1(int Rs1) {
+		rs1 = Rs1;
+	}
+
+	public int getRs2() {
+		return rs2;
+	}
+
+	public void setRs2(int Rs2) {
+		rs2 = Rs2;
+	}
+
+	public int getRd() {
+		return rd;
+	}
+
+	public void setRd(int Rd) {
+		rd = Rd;
+	}
+
+	public int getImm() {
+		return immediate;
+	}
+
+	public void setImm(int imm) {
+		immediate = imm;
+	}
+
+	public int getrem() {
+		return remainder;
+	}
+
+	public void setrem(int rem) {
+		remainder = rem;
 	}
 
 	public boolean isOF_busy() {
@@ -57,14 +118,6 @@ public class IF_OF_LatchType {
 		OF_busy = oF_busy;
 	}
 
-	public boolean isOF_busy_EX() {
-		return OF_busy_EX;
-	}
-
-	public void setOF_busy_EX(boolean oF_busy) {
-		OF_busy_EX = oF_busy;
-	}
-
 	public boolean isOF_busy_MA() {
 		return OF_busy_MA;
 	}
@@ -73,11 +126,19 @@ public class IF_OF_LatchType {
 		OF_busy_MA = oF_busy;
 	}
 
-	public boolean is_branch() {
+	public boolean isOF_busy_EX() {
+		return OF_busy_EX;
+	}
+
+	public void setOF_busy_EX(boolean oF_busy) {
+		OF_busy_EX = oF_busy;
+	}
+
+	public boolean isBranch() {
 		return branch;
 	}
 
-	public void set_branch(boolean b) {
+	public void setBranch(boolean b) {
 		branch = b;
 	}
 

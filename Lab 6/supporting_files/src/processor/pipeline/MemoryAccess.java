@@ -1,118 +1,163 @@
 package processor.pipeline;
 
-// import java.lang.module.Configuration;
-
+import processor.Processor;
+import generic.Instruction.OperationType;
 import generic.*;
 import processor.*;
+import processor.memorysystem.*;
 import configuration.Configuration;
 
 public class MemoryAccess implements Element {
 	Processor containingProcessor;
-	EX_MA_LatchType EX_MA_Latch;
-	MA_RW_LatchType MA_RW_Latch;
-	Branch_Hazard Br;
+	public EX_MA_LatchType EX_MA_Latch;
+	public MA_RW_LatchType MA_RW_Latch;
+	public OF_EX_LatchType OF_EX_Latch;
+	public IF_OF_LatchType IF_OF_Latch;
+	IF_EnableLatchType IF_EnableLatch;
 
 	public MemoryAccess(Processor containingProcessor, EX_MA_LatchType eX_MA_Latch, MA_RW_LatchType mA_RW_Latch,
-			Branch_Hazard br) {
+			OF_EX_LatchType oF_EX_Latch, IF_OF_LatchType iF_OF_Latch, IF_EnableLatchType iF_EnableLatch) {
 		this.containingProcessor = containingProcessor;
 		this.EX_MA_Latch = eX_MA_Latch;
 		this.MA_RW_Latch = mA_RW_Latch;
-		this.Br = br;
+		this.OF_EX_Latch = oF_EX_Latch;
+		this.IF_OF_Latch = iF_OF_Latch;
+		this.IF_EnableLatch = iF_EnableLatch;
 	}
 
 	public void performMA() {
-		if (EX_MA_Latch.is_MA_busy()) {
-			return;
-		}
 
-		if (MA_RW_Latch.is_MA_problem()) {
+		if (EX_MA_Latch.isBranch())
+			return;
+
+		if (EX_MA_Latch.isMA_problem()) {
 			EX_MA_Latch.setInstruction(null);
-			MA_RW_Latch.set_MA_problem(false);
+			EX_MA_Latch.setMA_problem(false);
+			// System.out.println("NULL setting in MA_problem");
 		}
-		if (EX_MA_Latch.is_branch()) {
+		if (EX_MA_Latch.isMA_busy()) {
+			// System.out.println("MA busy");
 			return;
 		}
 		if (EX_MA_Latch.isMA_enable()) {
+			String binaryInstruction = EX_MA_Latch.getInstruction();
+			System.out.println("MA " + EX_MA_Latch.instruction);
+			if (binaryInstruction != null) {
+				int rd = EX_MA_Latch.getRd();
+				int rs1 = EX_MA_Latch.getRs1();
+				int rs2 = EX_MA_Latch.getRs2();
+				int rem = EX_MA_Latch.getrem();
+				int aluresult = EX_MA_Latch.getAluResult();
+				int ldresult = 0;
+				OperationType operation = OperationType.values()[Integer.parseInt(binaryInstruction.substring(0, 5),
+						2)];
+				switch (operation) {
+					case load:
+						Simulator.getEventQueue().addEvent(new MemoryReadEvent(Clock.getCurrentTime(), this,
+								containingProcessor.getL1dCache(), aluresult));
+						// Simulator.getEventQueue().addEvent(new MemoryReadEvent(Clock.getCurrentTime()
+						// + Configuration.mainMemoryLatency, this, containingProcessor.getMainMemory(),
+						// aluresult));
+						MA_RW_Latch.setRW_enable(false);
+						EX_MA_Latch.setMA_busy(true);
+						OF_EX_Latch.setEX_busy_MA(true);
+						IF_OF_Latch.setOF_busy_MA(true);
+						MA_RW_Latch.setRW_busy(true);
+						System.out.println("LOAD DETECTED and inserted into the queue time: " + Clock.getCurrentTime());
+						// EX_MA_Latch.setInstruction(null);
+						// ldresult = containingProcessor.getMainMemory().getWord(aluresult);
+						// Memory read latency
+						break;
+					case store:
+						Simulator.getEventQueue()
+								.addEvent(new MemoryWriteEvent(Clock.getCurrentTime(), this,
+										containingProcessor.getL1dCache(), aluresult,
+										containingProcessor.getRegisterFile().getValue(rs1)));
+						// Simulator.getEventQueue().addEvent(new
+						// MemoryWriteEvent(Clock.getCurrentTime() + Configuration.mainMemoryLatency,
+						// this, containingProcessor.getMainMemory(), aluresult,
+						// containingProcessor.getRegisterFile().getValue(rs1)));
+						MA_RW_Latch.setRW_enable(false);
+						EX_MA_Latch.setMA_busy(true);
+						OF_EX_Latch.setEX_busy_MA(true);
+						IF_OF_Latch.setOF_busy_MA(true);
+						MA_RW_Latch.setRW_busy(true);
+						System.out
+								.println("Store DETECTED and inserted into the queue time: " + Clock.getCurrentTime());
 
-			// Taking instruction and alu from EX_MA latch
-			Instruction inst = EX_MA_Latch.getInstruction();
-
-			// MA_RW_Latch.setInstruction(inst); // Sending instruction further (don't send
-			// it here in assignment 5)
-
-			System.out.println("MA instruction: " + inst);
-			if (inst == null) {
-				MA_RW_Latch.setInstruction(inst);
+						// EX_MA_Latch.setInstruction(null);
+						// containingProcessor.getMainMemory().setWord(aluresult,
+						// containingProcessor.getRegisterFile().getValue(rs1));
+						// Memory read latency
+						break;
+					case end:
+						MA_RW_Latch.setRs1(rs1);
+						MA_RW_Latch.setRs2(rs2);
+						MA_RW_Latch.setRd(rd);
+						MA_RW_Latch.setAluResult(aluresult);
+						MA_RW_Latch.set_ldresult(ldresult);
+						MA_RW_Latch.setrem(rem);
+						EX_MA_Latch.setMA_enable(false);
+						MA_RW_Latch.setRW_enable(true);
+						MA_RW_Latch.setInstruction(binaryInstruction);
+						// System.out.println("END DETECTED");
+						break;
+					default:
+						MA_RW_Latch.setRs1(rs1);
+						MA_RW_Latch.setRs2(rs2);
+						MA_RW_Latch.setRd(rd);
+						MA_RW_Latch.setAluResult(aluresult);
+						MA_RW_Latch.set_ldresult(ldresult);
+						MA_RW_Latch.setrem(rem);
+						MA_RW_Latch.setRW_enable(true);
+						MA_RW_Latch.setInstruction(binaryInstruction);
+						// System.out.println("DEFAULT DETECTED");
+						break;
+				}
+				// MA_RW_Latch.setRs1(rs1);
+				// MA_RW_Latch.setRs2(rs2);
+				// MA_RW_Latch.setRd(rd);
+				// MA_RW_Latch.setAluResult(aluresult);
+				// MA_RW_Latch.set_ldresult(ldresult);
+				// MA_RW_Latch.setrem(rem);
+			} else {
+				MA_RW_Latch.setInstruction(null);
 				MA_RW_Latch.setRW_enable(true);
+				// System.out.println("NULL DETECTED");
 			}
-			if (inst != null) {
-
-				String op = inst.getOperationType().toString();
-				int alu = EX_MA_Latch.getALu(); // alu is pcnow + immed i.e. address (for load and store)
-
-				// MA_RW_Latch.setAlu(alu);
-
-				if (op.equals("load")) {
-					// MA_RW_Latch.setIdresult(containingProcessor.getMainMemory().getWord(alu)); //
-					// storing load result to
-					Simulator.getEventQueue()
-							.addEvent(new MemoryReadEvent(Clock.getCurrentTime() + Configuration.mainMemoryLatency,
-									this, containingProcessor.getMainMemory(), alu));
-
-					Br.IF_OF_Latch.setOF_busy_MA(true);
-					EX_MA_Latch.set_MA_busy(true);
-					Br.OF_EX_Latch.set_EX_busy_MA(true);
-					MA_RW_Latch.set_RW_busy(true);
-					MA_RW_Latch.setRW_enable(false);
-					// latch
-				} else if (op.equals("store")) {
-					// Storing word in source operand 1 in alu (address). Value is taken from
-					// registerfile
-					// containingProcessor.getMainMemory().setWord(alu,
-					// containingProcessor.getRegisterFile().getValue(inst.getSourceOperand1().getValue()));
-					Simulator.getEventQueue().addEvent(new MemoryWriteEvent(Clock.getCurrentTime(), this,
-							containingProcessor.getMainMemory(), alu,
-							containingProcessor.getRegisterFile().getValue(inst.getSourceOperand1().getValue())));
-
-					Br.IF_OF_Latch.setOF_busy_MA(true);
-					EX_MA_Latch.set_MA_busy(true);
-					Br.OF_EX_Latch.set_EX_busy_MA(true);
-					MA_RW_Latch.set_RW_busy(true);
-					MA_RW_Latch.setRW_enable(false);
-				}
-
-				else if (op.equals("end")) {
-					EX_MA_Latch.setMA_enable(false);
-					MA_RW_Latch.setInstruction(inst);
-
-				} else {
-					MA_RW_Latch.setInstruction(inst);
-					MA_RW_Latch.setRW_enable(true);
-					MA_RW_Latch.setAlu(alu);
-				}
-			}
-
-			// MA_RW_Latch.setRW_enable(true); (Not here in assignment 5)
-
+			// MA_RW_Latch.setInstruction(binaryInstruction);
 			// EX_MA_Latch.setMA_enable(false);
-
+			// MA_RW_Latch.setRW_enable(true);
 		}
 	}
 
 	@Override
 	public void handleEvent(Event e) {
-		System.out.println("\n-------HANDLING EVENT IN MA--------\n");
 		MemoryResponseEvent event = (MemoryResponseEvent) e;
-		Instruction inst = EX_MA_Latch.getInstruction();
-		MA_RW_Latch.setInstruction(inst);
-		MA_RW_Latch.setIdresult(event.getValue());
+		String binaryInstruction = EX_MA_Latch.getInstruction();
+		int rd = EX_MA_Latch.getRd();
+		int rs1 = EX_MA_Latch.getRs1();
+		int rs2 = EX_MA_Latch.getRs2();
+		int rem = EX_MA_Latch.getrem();
+		int aluresult = EX_MA_Latch.getAluResult();
+		int ldresult = event.getValue();
+		MA_RW_Latch.setRs1(rs1);
+		MA_RW_Latch.setRs2(rs2);
+		MA_RW_Latch.setRd(rd);
+		MA_RW_Latch.setAluResult(aluresult);
+		MA_RW_Latch.set_ldresult(ldresult);
+		MA_RW_Latch.setrem(rem);
+		System.out.println("\nhi in ma eventhandler\n" + binaryInstruction);
+		MA_RW_Latch.setInstruction(binaryInstruction);
+		// System.out.println("inst "+ newInstruction);
 		MA_RW_Latch.setRW_enable(true);
+		EX_MA_Latch.setMA_busy(false);
+		OF_EX_Latch.setEX_busy_MA(false);
+		IF_OF_Latch.setOF_busy_MA(false);
+		MA_RW_Latch.setRW_busy(false);
+		// EX_MA_Latch.setInstruction(null);
+		EX_MA_Latch.setMA_problem(true);
 
-		MA_RW_Latch.set_MA_problem(true);
-
-		Br.IF_OF_Latch.setOF_busy_MA(false);
-		EX_MA_Latch.set_MA_busy(false);
-		Br.OF_EX_Latch.set_EX_busy_MA(false);
-		MA_RW_Latch.set_RW_busy(false);
 	}
+
 }

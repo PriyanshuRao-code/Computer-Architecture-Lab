@@ -3,88 +3,68 @@ package generic;
 import java.io.PrintWriter;
 
 public class Statistics {
-
+	
 	// TODO add your statistics here
-	static int numberOfInstructions;
-	static int numberOfCycles;
-	static float ipc;
-	static float cpi;
-	static int ofStall;
-	static int wrongBranch;
+	static int numberOfInstructions=0;
+	static int numberOfCycles=0;
+	static int numberOfStalls=0;
+	static int numberOfWrongBranch=0;
+	static float IPC=0;
+	
 
-	public static void printStatistics(String statFile) {
-		try {
+	public static void printStatistics(String statFile)
+	{
+		try
+		{
 			PrintWriter writer = new PrintWriter(statFile);
-
-			// writer.println("Number of instructions executed = " + numberOfInstructions);
+			
+			writer.println("Number of instructions executed = " + numberOfInstructions);
 			writer.println("Number of cycles taken = " + numberOfCycles);
-			// writer.println("Number of OFstall = " + ofStall);
-			// writer.println("Number of branch taken (instructions i.e. 2 per branch) = " +
-			// wrongBranch);
-			setNumberOfInstructions(getNumberofInstruction() - wrongBranch);
-			writer.println("Number of instructions = " + numberOfInstructions);
+			IPC = (float)numberOfInstructions / (float)numberOfCycles;
+			writer.println("Instructions per Cycle (IPC) = " + IPC);
+			// writer.println("Number of times OF stage is stalled = " + numberOfStalls);
+			// writer.println("Number of times instruction on wrong branch path entered = " + numberOfWrongBranch);
+			
 			// TODO add code here to print statistics in the output file
-
-			setIpc(numberOfInstructions, numberOfCycles);
-			setCpi(numberOfInstructions, numberOfCycles);
-			writer.println("IPC = " + ipc);
-			// writer.println("CPI = " + cpi);
+			
 			writer.close();
-		} catch (Exception e) {
+		}
+		catch(Exception e)
+		{
 			Misc.printErrorAndExit(e.getMessage());
 		}
 	}
-
+	
 	// TODO write functions to update statistics
+	public static void setNumberOfStalls(int numberOfStalls) {
+		Statistics.numberOfStalls = numberOfStalls;
+	}
 
-	// getters and setters of inst_num, cycle_num, cpi_ipc (ALL STATISTICS)
-
-	public static void setNumberOfInstructions(int numberOfInstructions) {
-		Statistics.numberOfInstructions = numberOfInstructions;
+	public static void setNumberOfWrongBranch(int numberOfWrongBranch) {
+		Statistics.numberOfWrongBranch = numberOfWrongBranch;
 	}
 
 	public static void setNumberOfCycles(int numberOfCycles) {
 		Statistics.numberOfCycles = numberOfCycles;
 	}
 
-	public static int getNumberofInstruction() {
-		return numberOfInstructions;
+	public static void setNumberOfInstructions(int numberOfInst) {
+		Statistics.numberOfInstructions = numberOfInst;
 	}
 
-	public static int getNumberofCycles() {
+	public static int getNumberOfStalls() {
+		return numberOfStalls;
+	}
+
+	public static int getNumberOfWrongBranch() {
+		return numberOfWrongBranch;
+	}
+
+	public static int getNumberOfCycles() {
 		return numberOfCycles;
 	}
 
-	public static void setIpc(int instruction_num, int cycles_num) {
-		ipc = (float) instruction_num / (float) cycles_num;
+	public static int getNumberOfInstructions() {
+		return numberOfInstructions;
 	}
-
-	public static void setCpi(int instruction_num, int cycles_num) {
-		cpi = (float) cycles_num / (float) instruction_num;
-	}
-
-	public static float getIpc() {
-		return ipc;
-	}
-
-	public static float getCpi() {
-		return cpi;
-	}
-
-	public static int getofStall() {
-		return ofStall;
-	}
-
-	public static void setofStall(int stall) {
-		ofStall = stall;
-	}
-
-	public static int getwrongBranch() {
-		return wrongBranch;
-	}
-
-	public static void setwrongBranch(int wrong) {
-		wrongBranch = wrong;
-	}
-
 }

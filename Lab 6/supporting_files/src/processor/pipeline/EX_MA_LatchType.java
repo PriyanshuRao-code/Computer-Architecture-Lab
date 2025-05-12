@@ -1,14 +1,19 @@
 package processor.pipeline;
 
-import generic.*;
-
 public class EX_MA_LatchType {
 
 	boolean MA_enable;
-	Instruction instruction;
-	int aluResult;
-	boolean branch;
 	boolean MA_busy;
+	boolean MA_problem;
+	boolean branch;
+	int aluResult;
+	int immediate;
+	int rs1;
+	int rs2;
+	String instruction;
+	int rd;
+	int offset;
+	int remainder;
 
 	public EX_MA_LatchType() {
 		MA_enable = false;
@@ -22,35 +27,84 @@ public class EX_MA_LatchType {
 		MA_enable = mA_enable;
 	}
 
-	public void setInstruction(Instruction instruction) {
-		this.instruction = instruction;
-	}
-
-	public Instruction getInstruction() {
-		return instruction;
-	}
-
-	public void setAlu(int aluResult) {
-		this.aluResult = aluResult;
-	}
-
-	public int getALu() {
+	public int getAluResult() {
 		return aluResult;
 	}
 
-	public boolean is_branch() {
+	public void setAluResult(int alu) {
+		aluResult = alu;
+	}
+
+	public String getInstruction() {
+		return instruction;
+	}
+
+	public void setInstruction(String Instruction) {
+		instruction = Instruction;
+	}
+
+	public int getRs1() {
+		return rs1;
+	}
+
+	public void setRs1(int Rs1) {
+		rs1 = Rs1;
+	}
+
+	public int getRs2() {
+		return rs2;
+	}
+
+	public void setRs2(int Rs2) {
+		rs2 = Rs2;
+	}
+
+	public int getRd() {
+		return rd;
+	}
+
+	public void setRd(int Rd) {
+		rd = Rd;
+	}
+
+	public int getImm() {
+		return immediate;
+	}
+
+	public void setImm(int imm) {
+		immediate = imm;
+	}
+
+	public int getrem() {
+		return remainder;
+	}
+
+	public void setrem(int rem) {
+		remainder = rem;
+	}
+
+	public boolean isBranch() {
 		return branch;
 	}
 
-	public void set_branch(boolean b) {
+	public void setBranch(boolean b) {
 		branch = b;
 	}
 
-	public boolean is_MA_busy() {
+	public void setMA_busy(boolean busy) {
+		MA_busy = busy;
+	}
+
+	public boolean isMA_busy() {
 		return MA_busy;
 	}
 
-	public void set_MA_busy(boolean b) {
-		MA_busy = b;
+	public void setMA_problem(boolean problem) {
+		MA_problem = problem;
 	}
+
+	public boolean isMA_problem() {
+		return MA_problem;
+	}
+
 }

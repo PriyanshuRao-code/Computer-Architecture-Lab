@@ -31,7 +31,7 @@ os.chdir(submissions_temp_dir)
 stdout_file = open("./tmp.output", 'a')
 popen_args = [r"C:\Program Files (x86)\Apache\bin\ant.bat","make-jar"]
 proc = subprocess.Popen(popen_args, stdout = stdout_file, stderr = stdout_file)
-timer = Timer(5, proc.kill)
+timer = Timer(50, proc.kill)
 try:
 	timer.start()
 	stdout, stderr = proc.communicate()
@@ -54,7 +54,7 @@ for testcase in os.listdir(test_cases_dir):
 		popen_args = ["java", "-Xmx1g", "-jar", "jars/simulator.jar", "./src/configuration/config.xml", "./" + testcase.split(".")[0] + ".observedstat", test_cases_dir + "/" + testcase]
 #		print(popen_args)
 		proc = subprocess.Popen(popen_args, stdout = stdout_file, stderr = stdout_file)
-		timer = Timer(5, proc.kill)
+		timer = Timer(50, proc.kill)
 		try:
 			timer.start()
 			stdout, stderr = proc.communicate()

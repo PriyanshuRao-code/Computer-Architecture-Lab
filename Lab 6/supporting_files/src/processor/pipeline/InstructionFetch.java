@@ -1,8 +1,9 @@
 package processor.pipeline;
 
 import configuration.*;
-import generic.*;
 import processor.*;
+import processor.memorysystem.*;
+import generic.*;
 
 public class InstructionFetch implements Element {
 
@@ -10,103 +11,136 @@ public class InstructionFetch implements Element {
 	IF_EnableLatchType IF_EnableLatch;
 	IF_OF_LatchType IF_OF_Latch;
 	EX_IF_LatchType EX_IF_Latch;
-	Branch_Hazard Br;
+	OF_EX_LatchType OF_EX_Latch; // new
+	EX_MA_LatchType EX_MA_Latch; // new
+	MA_RW_LatchType MA_RW_Latch; // new
 
 	public InstructionFetch(Processor containingProcessor, IF_EnableLatchType iF_EnableLatch,
-			IF_OF_LatchType iF_OF_Latch, EX_IF_LatchType eX_IF_Latch, Branch_Hazard br) {
+			IF_OF_LatchType iF_OF_Latch, EX_IF_LatchType eX_IF_Latch, OF_EX_LatchType oF_EX_Latch,
+			EX_MA_LatchType eX_MA_Latch, MA_RW_LatchType mA_RW_Latch) {
 		this.containingProcessor = containingProcessor;
 		this.IF_EnableLatch = iF_EnableLatch;
 		this.IF_OF_Latch = iF_OF_Latch;
 		this.EX_IF_Latch = eX_IF_Latch;
-		this.Br = br;
+		this.OF_EX_Latch = oF_EX_Latch;
+		this.EX_MA_Latch = eX_MA_Latch;
+		this.MA_RW_Latch = mA_RW_Latch;
 	}
 
 	public void performIF() {
+		int currentPC = 0;
+
 		if (IF_EnableLatch.isIF_enable()) {
-			// || IF_EnableLatch.is_IF_busy_EX()
 			if (IF_EnableLatch.isIF_busy()) {
-				// IF_OF_Latch.setInstruction(-1);
-				System.out.println("IF BUSY");
+				// System.out.println("HI");
 				return;
 			}
-			if (EX_IF_Latch.isBranchEnabled()) {
-				int newPC = EX_IF_Latch.getPC();
-				if (IF_OF_Latch.getBranchHazard()) {
+			if (IF_EnableLatch.isIF_busy_MA()) {
+				return;
+			}
+			if (IF_EnableLatch.isIF_busy_EX()) {
+				return;
+			}
+			if (EX_IF_Latch.getIF_enable()) {
+				currentPC = EX_IF_Latch.get_BPC();
+				System.out.println("hi i got the new branch address as : " + currentPC);
+				if (IF_OF_Latch.isBranchHazard()) {
 					IF_OF_Latch.setBranchHazard(false);
-					IF_OF_Latch.setInstruction(-1);
-					Statistics.setwrongBranch(Statistics.getwrongBranch() + 1);
-					IF_OF_Latch.setOF_enable(true);
-					System.out.println("Branch Hazard Detected in IF");
+					IF_OF_Latch.setInstruction(null);
+					// System.out.println("inst null");
+					Statistics.setNumberOfWrongBranch(Statistics.getNumberOfWrongBranch() + 1);
 				} else {
-					System.out.println("SETTING EX_IF PC");
-					containingProcessor.getRegisterFile().setProgramCounter(newPC);
-					EX_IF_Latch.setBranchEnabled(false);
-					int currentPC = containingProcessor.getRegisterFile().getProgramCounter();
+					containingProcessor.getRegisterFile().setProgramCounter(currentPC);
+					EX_IF_Latch.setIF_enable(false);
 					// int newInstruction = containingProcessor.getMainMemory().getWord(currentPC);
-					// IF_OF_Latch.setInstruction(newInstruction);
-					// System.out.println("PC now: " + currentPC);
-
-					Simulator.getEventQueue()
-							.addEvent(new MemoryReadEvent(Clock.getCurrentTime() + Configuration.mainMemoryLatency,
-									this, containingProcessor.getMainMemory(),
-									containingProcessor.getRegisterFile().getProgramCounter()));
+					// Memory read latency
+					Simulator.getEventQueue().addEvent(new MemoryReadEvent(Clock.getCurrentTime(), this,
+							containingProcessor.getL1iCache(), currentPC));
+					// Simulator.getEventQueue().addEvent(new MemoryReadEvent(Clock.getCurrentTime()
+					// + Configuration.mainMemoryLatency, this, containingProcessor.getMainMemory(),
+					// currentPC));
+					// System.out.println("IF busy");
+					System.out.println(
+							"hi i got the new branch address and event was added with the  address: " + currentPC);
 					IF_EnableLatch.setIF_busy(true);
 					IF_OF_Latch.setOF_enable(false);
-
-					// IF_EnableLatch.set_branch(false);
-					IF_EnableLatch.set_expc(true);
-
+					IF_EnableLatch.setExpc(true);
 					// containingProcessor.getRegisterFile().setProgramCounter(currentPC + 1);
+
+					// String newBinaryInstruction = Integer.toBinaryString(newInstruction);
+					// newBinaryInstruction = String.format("%32s", newBinaryInstruction).replace('
+					// ', '0');
+					// containingProcessor.getRegisterFile().setProgramCounter(currentPC + 1);
+					// IF_OF_Latch.setInstruction(newBinaryInstruction);
+					// System.out.println("inst "+ newInstruction);
 				}
 			} else {
-				// int currentPC = containingProcessor.getRegisterFile().getProgramCounter();
+				currentPC = containingProcessor.getRegisterFile().getProgramCounter();
 				// int newInstruction = containingProcessor.getMainMemory().getWord(currentPC);
-				// IF_OF_Latch.setInstruction(newInstruction);
-				// System.out.println("PC now: " + currentPC);
-
-				Simulator.getEventQueue()
-						.addEvent(new MemoryReadEvent(Clock.getCurrentTime() + Configuration.mainMemoryLatency, this,
-								containingProcessor.getMainMemory(),
-								containingProcessor.getRegisterFile().getProgramCounter()));
+				// Memory read latency
+				Simulator.getEventQueue().addEvent(new MemoryReadEvent(Clock.getCurrentTime(), this,
+						containingProcessor.getL1iCache(), currentPC));
+				// Simulator.getEventQueue().addEvent(new MemoryReadEvent(Clock.getCurrentTime()
+				// + Configuration.mainMemoryLatency, this, containingProcessor.getMainMemory(),
+				// currentPC));
 				IF_EnableLatch.setIF_busy(true);
 				IF_OF_Latch.setOF_enable(false);
-
+				IF_EnableLatch.setExpc(true);
+				// System.out.println("IF busy");
 				// containingProcessor.getRegisterFile().setProgramCounter(currentPC + 1);
-			}
-			// IF_EnableLatch.setIF_enable(false);
 
+				// String newBinaryInstruction = Integer.toBinaryString(newInstruction);
+				// newBinaryInstruction = String.format("%32s", newBinaryInstruction).replace('
+				// ', '0');
+				// containingProcessor.getRegisterFile().setProgramCounter(currentPC + 1);
+				// IF_OF_Latch.setInstruction(newBinaryInstruction);
+				// System.out.println("inst "+ newInstruction);
+			}
+
+			// IF_EnableLatch.setIF_enable(false);
 			// IF_OF_Latch.setOF_enable(true);
 		}
+		// System.out.println();
 	}
 
 	@Override
 	public void handleEvent(Event e) {
-		if (IF_OF_Latch.isOF_busy() || IF_OF_Latch.isOF_busy_EX() || IF_OF_Latch.isOF_busy_MA()) {
+		if (IF_OF_Latch.isOF_busy() || IF_OF_Latch.isOF_busy_MA() || IF_OF_Latch.isOF_busy_EX()) {
 			e.setEventTime(Clock.getCurrentTime() + 1);
 			Simulator.getEventQueue().addEvent(e);
+		} else if (EX_IF_Latch.isIF_enable()) {
+			System.out.println("hi in ex if latch of if event");
+			IF_EnableLatch.setIF_busy(false);
+			IF_OF_Latch.setOF_enable(false);
 		} else {
-			System.out.println("\n------HANDLING EVENT IN IF-----\n");
 			MemoryResponseEvent event = (MemoryResponseEvent) e;
-			if (IF_EnableLatch.is_expc()) {
-				IF_EnableLatch.set_expc(false);
-				IF_OF_Latch.set_branch(false);
-				Br.OF_EX_Latch.set_branch(false);
-				Br.EX_MA_Latch.set_branch(false);
-				Br.MA_RW_Latch.set_branch(false);
+			if (IF_EnableLatch.getExpc()) {
+				IF_EnableLatch.setExpc(false);
+				IF_OF_Latch.setBranch(false);
+				OF_EX_Latch.setBranch(false);
+				EX_MA_Latch.setBranch(false);
+				MA_RW_Latch.setBranch(false);
 			}
-
-			Statistics.setNumberOfInstructions(Statistics.getNumberofInstruction() + 1);
-			System.out
-					.println("\n\n\n-------INSTRUCTION COUNT " + Statistics.getNumberofInstruction() + "------\n\n\n");
-
-			int currentPC = containingProcessor.getRegisterFile().getProgramCounter();
-			IF_OF_Latch.setInstruction(event.getValue());
-			System.out.println("PC now: " + currentPC);
-			containingProcessor.getRegisterFile().setProgramCounter(currentPC + 1);
-
 			IF_OF_Latch.setOF_enable(true);
 			IF_EnableLatch.setIF_busy(false);
-		}
 
+			int currentPC = containingProcessor.getRegisterFile().getProgramCounter();
+			int newInstruction = event.getValue();
+			// Memory read latency
+			// Simulator.getEventQueue().addEvent(new MemoryReadEvent(Clock.getCurrentTime()
+			// + configuration.mainMemoryLatency, this, containingProcessor.getMainMemory(),
+			// currentPC));
+			// IF_EnableLatch.setIF_busy(true);
+			// IF_OF_Latch.setOF_enable(false);
+			System.out.println("pc IF event handeled for this at clock: " + Clock.getCurrentTime() + "  "
+					+ containingProcessor.getRegisterFile().getProgramCounter());
+			String newBinaryInstruction = Integer.toBinaryString(newInstruction);
+			newBinaryInstruction = String.format("%32s", newBinaryInstruction).replace(' ', '0');
+			containingProcessor.getRegisterFile().setProgramCounter(currentPC + 1);
+			IF_OF_Latch.setInstruction(newBinaryInstruction);
+			// System.out.println("inst "+ newInstruction);
+
+		}
 	}
+
 }

@@ -1,20 +1,21 @@
 package processor.pipeline;
 
-import generic.*;
-
 public class OF_EX_LatchType {
 
 	boolean EX_enable;
-	Instruction instruction;
-	boolean branch;
-	boolean branch_problem;
-	boolean jumped;
 	boolean EX_busy;
 	boolean EX_busy_MA;
+	boolean branch;
+	boolean branch_problem;
+	int rs1;
+	int rs2;
+	int rd;
+	int immediate;
+	int branchTarget;
+	String instruction;
 
 	public OF_EX_LatchType() {
 		EX_enable = false;
-		branch_problem = false;
 	}
 
 	public boolean isEX_enable() {
@@ -25,52 +26,84 @@ public class OF_EX_LatchType {
 		EX_enable = eX_enable;
 	}
 
-	public void setInstruction(Instruction instruction) {
-		this.instruction = instruction;
-	}
-
-	public Instruction getInstruction() {
+	public String getInstruction() {
 		return instruction;
 	}
 
-	public boolean is_branch() {
+	public void setInstruction(String Instruction) {
+		instruction = Instruction;
+	}
+
+	public int getRs1() {
+		return rs1;
+	}
+
+	public void setRs1(int Rs1) {
+		rs1 = Rs1;
+	}
+
+	public int getRs2() {
+		return rs2;
+	}
+
+	public void setRs2(int Rs2) {
+		rs2 = Rs2;
+	}
+
+	public int getRd() {
+		return rd;
+	}
+
+	public void setRd(int Rd) {
+		rd = Rd;
+	}
+
+	public int getImm() {
+		return immediate;
+	}
+
+	public void setImm(int imm) {
+		immediate = imm;
+	}
+
+	public int getOffset() {
+		return branchTarget;
+	}
+
+	public void setOffset(int brnchT) {
+		branchTarget = brnchT;
+	}
+
+	public boolean isBranch() {
 		return branch;
 	}
 
-	public void set_branch(boolean b) {
+	public void setBranch(boolean b) {
 		branch = b;
 	}
 
-	public boolean is_branch_problem() {
+	public boolean isBranchPorblem() {
 		return branch_problem;
 	}
 
-	public void set_branch_problem(boolean b) {
+	public void setBranchProblem(boolean b) {
 		branch_problem = b;
 	}
 
-	public boolean is_jumped() {
-		return jumped;
-	}
-
-	public void set_jumped(boolean b) {
-		jumped = b;
-	}
-
-	public boolean is_EX_busy() {
+	public boolean isEX_busy() {
 		return EX_busy;
 	}
 
-	public void set_EX_busy(boolean b) {
-		EX_busy = b;
+	public void setEX_busy(boolean busy) {
+		EX_busy = busy;
 	}
 
-	public boolean is_EX_busy_MA() {
-		return EX_busy;
+	public boolean isEX_busy_MA() {
+		return EX_busy_MA;
 	}
 
-	public void set_EX_busy_MA(boolean b) {
-		EX_busy = b;
+	public void setEX_busy_MA(boolean busy) {
+		EX_busy_MA = busy;
 	}
 
 }

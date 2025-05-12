@@ -1,16 +1,18 @@
 package processor.pipeline;
 
-import generic.*;
-
 public class MA_RW_LatchType {
 
 	boolean RW_enable;
-	Instruction instruction;
-	int aluResult;
-	int Idresult;
-	boolean branch;
 	boolean RW_busy;
-	boolean MA_problem;
+	boolean branch;
+	String instruction;
+	int ldResult = 0;
+	int aluResult;
+	int rs1;
+	int rs2;
+	int rd;
+	int immediate;
+	int remainder;
 
 	public MA_RW_LatchType() {
 		RW_enable = false;
@@ -24,51 +26,84 @@ public class MA_RW_LatchType {
 		RW_enable = rW_enable;
 	}
 
-	public void setInstruction(Instruction instruction) {
-		this.instruction = instruction;
-	}
-
-	public Instruction getInstruction() {
+	public String getInstruction() {
 		return instruction;
 	}
 
-	public void setAlu(int aluResult) {
-		this.aluResult = aluResult;
+	public void setInstruction(String Instruction) {
+		instruction = Instruction;
 	}
 
-	public int getALu() {
+	public void set_ldresult(int Ldresult) {
+		ldResult = Ldresult;
+	}
+
+	public int get_ldresult() {
+		return ldResult;
+	}
+
+	public int getAluResult() {
 		return aluResult;
 	}
 
-	public void setIdresult(int Idresult) {
-		this.Idresult = Idresult;
+	public void setAluResult(int alu) {
+		aluResult = alu;
 	}
 
-	public int getIdresult() {
-		return Idresult;
+	public int getRs1() {
+		return rs1;
 	}
 
-	public boolean is_branch() {
+	public void setRs1(int Rs1) {
+		rs1 = Rs1;
+	}
+
+	public int getRs2() {
+		return rs2;
+	}
+
+	public void setRs2(int Rs2) {
+		rs2 = Rs2;
+	}
+
+	public int getRd() {
+		return rd;
+	}
+
+	public void setRd(int Rd) {
+		rd = Rd;
+	}
+
+	public int getImm() {
+		return immediate;
+	}
+
+	public void setImm(int imm) {
+		immediate = imm;
+	}
+
+	public int getrem() {
+		return remainder;
+	}
+
+	public void setrem(int rem) {
+		remainder = rem;
+	}
+
+	public boolean isBranch() {
 		return branch;
 	}
 
-	public void set_branch(boolean b) {
+	public void setBranch(boolean b) {
 		branch = b;
 	}
 
-	public boolean is_RW_busy() {
+	public boolean isRW_busy() {
 		return RW_busy;
 	}
 
-	public void set_RW_busy(boolean b) {
+	public void setRW_busy(boolean b) {
 		RW_busy = b;
 	}
 
-	public boolean is_MA_problem() {
-		return MA_problem;
-	}
-
-	public void set_MA_problem(boolean b) {
-		MA_problem = b;
-	}
 }

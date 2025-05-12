@@ -3,6 +3,7 @@ package processor.memorysystem;
 import generic.*;
 import generic.Event.EventType;
 import processor.Clock;
+import configuration.*;
 
 public class MainMemory implements Element {
 	int[] memory;
@@ -36,16 +37,18 @@ public class MainMemory implements Element {
 	public void handleEvent(Event e) {
 		if (e.getEventType() == EventType.MemoryRead) {
 			MemoryReadEvent event = (MemoryReadEvent) e;
-			Simulator.getEventQueue().addEvent(new MemoryResponseEvent(Clock.getCurrentTime(), this,
-					event.getRequestingElement(), getWord(event.getAddressToReadFrom())));
+			Simulator.getEventQueue()
+					.addEvent(new MemoryResponseEvent(Clock.getCurrentTime() + Configuration.mainMemoryLatency, this,
+							event.getRequestingElement(), getWord(event.getAddressToReadFrom()),
+							event.getAddressToReadFrom()));
 		}
-
 		if (e.getEventType() == EventType.MemoryWrite) {
-			assert e instanceof MemoryWriteEvent;
+			// assert e instanceof MemoryWriteEvent;
 			MemoryWriteEvent event = (MemoryWriteEvent) e;
 			setWord(event.getAddressToWriteTo(), event.getValue());
 			Simulator.getEventQueue()
-					.addEvent(new MemoryResponseEvent(Clock.getCurrentTime(), this, event.getRequestingElement(), 0));
+					.addEvent(new MemoryResponseEvent(Clock.getCurrentTime() + Configuration.mainMemoryLatency, this,
+							event.getRequestingElement(), event.getValue(), event.getAddressToWriteTo()));
 		}
 	}
 }
