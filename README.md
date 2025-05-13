@@ -80,7 +80,8 @@ python test_zip.py <path-to-zip-file>
 Implemented a single-cycle processor that takes the binary file (generated from Lab 2) as input and simulates instruction execution in a single clock cycle per instruction.  
 Post execution, the **register file** and **memory contents** are verified against expected outputs to ensure correctness of execution.
 
-➡️ Refer to the [Usage Instructions](#usage-instructions-applicable-for-labs-3–6) for build, run, and test commands.
+
+➡️ Refer to the [Usage Instructions](#usage-instructions-applicable-for-labs-3-6) for build, run, and test commands.
 
 ---
 
@@ -88,7 +89,8 @@ Post execution, the **register file** and **memory contents** are verified again
 
 Implemented a pipelined processor and introduced **stalls** to handle **data hazards** and **branch hazards**, ensuring smooth execution of the instruction pipeline.
 
-➡️ Refer to the [Usage Instructions](#usage-instructions-applicable-for-labs-3–6) for build, run, and test commands.
+
+➡️ Refer to the [Usage Instructions](#usage-instructions-applicable-for-labs-3-6) for build, run, and test commands.
 
 ---
 
@@ -101,7 +103,8 @@ Developed a discrete event simulator using an `Event` class from `Event.java` to
 
 Other files were appropriately modified to accommodate these latencies and maintain smooth program flow.
 
-➡️ Refer to the [Usage Instructions](#usage-instructions-applicable-for-labs-3–6) for build, run, and test commands.
+
+➡️ Refer to the [Usage Instructions](#usage-instructions-applicable-for-labs-3-6) for build, run, and test commands.
 
 ---
 
@@ -115,12 +118,12 @@ Key highlights:
 
 📁 **To test different cache sizes and configurations**, edit:`supporting_files/src/configuration/config.xml`. 
 
+➡️ Refer to the [Usage Instructions](#usage-instructions-applicable-for-labs-3-6) for build, run, and test commands.
 
-➡️ Refer to the [Usage Instructions](#usage-instructions-applicable-for-labs-3–6) for build, run, and test commands.
 
 ---
 
-## 📌 Usage Instructions (Applicable for Labs 3–6)
+## 📌 Usage Instructions (Applicable for Labs 3-6)
 
 The following instructions are common for **Lab 3 – Single Cycle Processor**, **Lab 4 – Pipelined Processor**, **Lab 5 – Discrete Event Simulator**, and **Lab 6 – Cache Integration**.
 
