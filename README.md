@@ -120,7 +120,6 @@ Key highlights:
 
 ➡️ Refer to the [Usage Instructions](#usage-instructions-applicable-for-labs-3-6) for build, run, and test commands.
 
-
 ---
 
 ## 📌 Usage Instructions (Applicable for Labs 3-6)
