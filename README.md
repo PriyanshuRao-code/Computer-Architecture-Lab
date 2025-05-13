@@ -10,6 +10,8 @@ If you're creating a `.jar` file and it doesn't run as expected (for example, in
 
 > **Each lab folder contains a README and handouts for detailed instructions. Please refer to them before execution.**
 
+> At the end of this README, I have provided the directory tree of this complete GitHub repository, so that you can easily find the files available in each lab individually all at once.
+
 ---
 
 
@@ -81,7 +83,7 @@ Implemented a single-cycle processor that takes the binary file (generated from 
 Post execution, the **register file** and **memory contents** are verified against expected outputs to ensure correctness of execution.
 
 
-➡️ Refer to the [Usage Instructions](#usage-instructions-applicable-for-labs-3-6) for build, run, and test commands.
+➡️ Refer to the **Usage Instructions** at the end of this README for build, run, and test commands.
 
 ---
 
@@ -90,7 +92,7 @@ Post execution, the **register file** and **memory contents** are verified again
 Implemented a pipelined processor and introduced **stalls** to handle **data hazards** and **branch hazards**, ensuring smooth execution of the instruction pipeline.
 
 
-➡️ Refer to the [Usage Instructions](#usage-instructions-applicable-for-labs-3-6) for build, run, and test commands.
+➡️ Refer to the **Usage Instructions** at the end of this README for build, run, and test commands.
 
 ---
 
@@ -104,7 +106,8 @@ Developed a discrete event simulator using an `Event` class from `Event.java` to
 Other files were appropriately modified to accommodate these latencies and maintain smooth program flow.
 
 
-➡️ Refer to the [Usage Instructions](#usage-instructions-applicable-for-labs-3-6) for build, run, and test commands.
+➡️ Refer to the **Usage Instructions** at the end of this README for build, run, and test commands.
+
 
 ---
 
@@ -118,7 +121,8 @@ Key highlights:
 
 📁 **To test different cache sizes and configurations**, edit:`supporting_files/src/configuration/config.xml`. 
 
-➡️ Refer to the [Usage Instructions](#usage-instructions-applicable-for-labs-3-6) for build, run, and test commands.
+➡️ Refer to the **Usage Instructions** at the end of this README for build, run, and test commands.
+
 
 ---
 
